@@ -21,38 +21,82 @@ body {
   margin: 0;
 }
 
-.cards {
+.card {
   font-size: 100%;
   line-height: 1.3;
 }
 
-h2 {
+.cards {
+  margin: 1em;
+  list-style-type: none;
+}
+
+.card-body h2 {
   font-size: 1.5em;
   margin: 0;
   font-weight: normal;
 }
 
-p {
+.card-body p {
   margin-top: 0;
   margin-bottom: 1.3em;
 }
 
-img {
+.card-img img {
   width: 50px;
   margin: .5em;
 }
 
-.img {
+.card-img {
   text-align: center;
 }
 @media only screen and (min-width: 25em) {
 
-  .img {
+  .card-img {
     display: inline-block;
   }
 
-  .words {
+  .card-body {
     display: inline-block;
+    max-width: 75%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .cards {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .card {
+    display: inline-block;
+    max-width: 32%;
+  }
+
+  .card-body {
+    display: block;
+  }
+
+  .card-img {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .cards {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  .cards {
+    font-size: 130%;
+    line-height: 1.5;
   }
 
 }
